@@ -1,0 +1,56 @@
+.image-password {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+.form-reset-section {
+  /* background: #103636; */
+  background: rgba(133, 216, 216, 0.22);
+  /* background: rgba(255, 255, 255, 0.25); */
+  border-radius: 12px;
+  padding: 25px 50px 30px 50px;
+  backdrop-filter: blur(10px);
+  width: 75%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+.forgot-pass-heading {
+  font-family: 'Poppins';
+  font-size: 36px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.back-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  cursor: pointer;
+}
+.back-arrow {
+  width: 25px;
+  height: 25px;
+  color: #ffffff;
+}
+.back-text {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 700px) {
+  .form-reset-section {
+    padding: 15px 20px 25px 20px;
+  }
+  .forgot-pass-heading {
+    font-size: 24px;
+  }
+  .image-password {
+    width: 170px;
+    height: 170px;
+  }
+}

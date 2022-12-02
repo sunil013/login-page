@@ -1,0 +1,60 @@
+.signup-container {
+  display: flex;
+  align-items: center;
+}
+.password-image {
+  width: 70%;
+  max-width: 350px;
+  border-radius: 175px;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 60px;
+}
+.sign-up-heading {
+  font-family: 'Poppins';
+  font-size: 28px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.signup-label-text {
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: 600;
+  color: #f8f8f8;
+  margin-left: 6px;
+}
+.form-signup-section {
+  background: transparent;
+  padding: 25px 50px 30px 50px;
+  width: 80%;
+  max-width: 360px;
+}
+.sign-in-msg {
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: 500;
+  color: #f8f8f8;
+}
+.sign-up-message {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 500;
+  color: #e4d8d8a4;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+  }
+  .password-image {
+    margin-bottom: 30px;
+  }
+  .card-container {
+    margin-left: 0px;
+  }
+}

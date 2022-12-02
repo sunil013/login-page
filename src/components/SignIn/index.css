@@ -1,0 +1,140 @@
+* {
+  margin: 0px;
+}
+.sign-page {
+  background-image: linear-gradient(
+    to right bottom,
+    #000b0d,
+    #0a191c,
+    #0c2429,
+    #0c3037,
+    #093d46,
+    #0b4d58,
+    #0e5e6a,
+    #10707c,
+    #1d8a96,
+    #2ba5af,
+    #39c1c9,
+    #48dde3
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-section {
+  background: rgba(133, 216, 216, 0.22);
+  /* background: rgba(255, 255, 255, 0.25); */
+  border-radius: 12px;
+  padding: 25px 50px 30px 50px;
+  backdrop-filter: blur(10px);
+  width: 80%;
+  max-width: 360px;
+}
+.sign-in-heading {
+  font-family: 'Poppins';
+  font-size: 39px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.login-message {
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 500;
+  color: #e4d8d8a4;
+  margin-bottom: 20px;
+}
+.icons {
+  height: 30px;
+  width: 30px;
+  color: #ffffff;
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  border: #e4d8d8a4 solid 1px;
+  border-radius: 6px;
+  padding-left: 8px;
+  margin-bottom: 20px;
+}
+.user-input {
+  border: none;
+  background-color: transparent;
+  height: 35px;
+  width: 100%;
+  padding-left: 9px;
+  outline: none;
+  font-family: 'Poppins';
+  font-size: 19px;
+  font-weight: 500;
+  color: #f8f8f8;
+}
+.check-box {
+  width: 20px;
+  height: 20px;
+  clip-path: circle(55% at 50% 50%);
+  cursor: pointer;
+}
+.label-text {
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 600;
+  color: #f8f8f8;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.label-box-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sign-in-button {
+  background-color: #026ff0;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Poppins';
+  border-radius: 7px;
+  border: none;
+  width: 100%;
+  height: 35px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.sign-in-button:hover {
+  background-color: #0000ff;
+}
+.sign-up-msg {
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: 500;
+  color: #f8f8f8;
+  margin-top: 9px;
+  margin-bottom: 8px;
+}
+.sign-forgot {
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: 700;
+  color: #00008b;
+}
+.link {
+  text-decoration: none;
+}
+.show-button {
+  background-color: transparent;
+  border: none;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  color: #f8f8f8;
+}
+
+@media screen and (max-width: 700px) {
+  .form-section {
+    padding: 15px 20px 25px 20px;
+  }
+}
