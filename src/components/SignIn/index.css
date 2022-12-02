@@ -91,7 +91,8 @@
   align-items: center;
 }
 .sign-in-button {
-  background-color: #026ff0;
+  /* background-color: #026ff0; */
+  background-image: linear-gradient(to right, #2ba5af, #39c1c9);
   color: #ffffff;
   font-size: 15px;
   font-weight: 600;
@@ -102,9 +103,13 @@
   height: 35px;
   margin-top: 20px;
   cursor: pointer;
+  background-size: 100% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
 }
 .sign-in-button:hover {
-  background-color: #0000ff;
+  background-image: linear-gradient(to right, #00c578, #01b7ed);
+  background-position: left bottom;
 }
 .sign-up-msg {
   font-family: 'Poppins';
@@ -119,6 +124,9 @@
   font-size: 15px;
   font-weight: 700;
   color: #00008b;
+}
+.sign-forgot:hover {
+  text-decoration: underline;
 }
 .link {
   text-decoration: none;
