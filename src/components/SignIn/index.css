@@ -51,8 +51,8 @@
   text-align: center;
 }
 .icons {
-  height: 30px;
-  width: 30px;
+  height: 26px;
+  width: 26px;
   color: #ffffff;
   position: absolute;
   margin-left: 4px;
@@ -78,7 +78,7 @@
 } */
 .user-input {
   border: none;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
   border-radius: 6px;
   padding-left: 8px;
   background-color: transparent;
@@ -92,7 +92,7 @@
   color: #f8f8f8;
 }
 .user-input:focus {
-  border: 1px solid #00dfc4;
+  border: 1.5px solid #00dfc4;
 }
 .check-box {
   width: 20px;

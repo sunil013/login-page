@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import {Link} from 'react-router-dom'
-import {AiOutlineTwitter} from 'react-icons/ai'
+import {BsTwitter} from 'react-icons/bs'
 import {FaFacebookF} from 'react-icons/fa'
 import {SiGmail} from 'react-icons/si'
 import {HiMail} from 'react-icons/hi'
@@ -68,7 +68,7 @@ const SignIn = () => {
             <SiGmail size={20} />
           </a>
           <a className="twitter-icon icons-container">
-            <AiOutlineTwitter size={25} />
+            <BsTwitter size={25} />
           </a>
         </div>
         <p className="sign-up-msg">
