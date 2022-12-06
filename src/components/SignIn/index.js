@@ -23,7 +23,6 @@ const SignIn = () => {
         <h1 className="sign-in-heading">Sign in</h1>
         <p className="login-message">Login to manage your account</p>
         <div className="input-box">
-          <HiMail className="icons" />
           <input
             type="email"
             className="user-input"
@@ -31,9 +30,9 @@ const SignIn = () => {
             onChange={onChangeMail}
             placeholder="Email"
           />
+          <HiMail className="icons" />
         </div>
         <div className="input-box">
-          <MdVpnKey className="icons" />
           <input
             type={showPass ? 'text' : 'password'}
             className="user-input"
@@ -41,6 +40,7 @@ const SignIn = () => {
             onChange={onChangePassword}
             placeholder="Password"
           />
+          <MdVpnKey className="icons" />
           <button type="button" onClick={onChangeShow} className="show-button">
             {showPass ? 'Hide' : 'Show'}
           </button>
