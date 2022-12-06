@@ -4,9 +4,7 @@
   align-self: center;
 }
 .form-reset-section {
-  /* background: #103636; */
   background: rgba(133, 216, 216, 0.22);
-  /* background: rgba(255, 255, 255, 0.25); */
   border-radius: 12px;
   padding: 25px 50px 30px 50px;
   backdrop-filter: blur(10px);
@@ -14,12 +12,16 @@
   max-width: 360px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .forgot-pass-heading {
   font-family: 'Poppins';
   font-size: 36px;
-  font-weight: 500;
-  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(240.51deg, #01b5ff, #00c957);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
 .back-container {
@@ -40,6 +42,45 @@
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
+}
+.back-text:hover {
+  color: #62f3f3;
+}
+.email-input-box {
+  position: relative;
+  width: 100%;
+}
+.email-input-box input {
+  width: 92%;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+  transition: 0.5s;
+}
+.email-input-box span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1.1em;
+  color: rgba(255, 255, 255, 0.25);
+  color: #00dfc4;
+  transform: translateX(10px) translateY(-12px);
+  font-size: 0.8em;
+  padding: 0 8px;
+  background: #00dfc4;
+  color: #1d2b3a;
+  border-left: 1.3px solid #00dfc4;
+  border-right: 1.3px solid #00dfc4;
+  letter-spacing: 0.2em;
+}
+.email-input-box input:focus {
+  border: 2px solid #00dfc4;
 }
 
 @media screen and (max-width: 700px) {

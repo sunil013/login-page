@@ -29,14 +29,16 @@ const ResetPassword = () => {
           Please enter your registered email address we'll send instructions to
           help reset your password
         </p>
-        <div className="input-box">
-          <HiMail className="icons" />
+        <div className="email-input-box">
+          {/* <HiMail className="icons" /> */}
           <input
             type="email"
-            className="user-input"
+            // className="user-input"
             value={mail}
             onChange={onChangeMail}
+            placeholder="example@gmail.com"
           />
+          <span>EMAIL</span>
         </div>
         <button className="sign-in-button" type="button">
           Send reset instructions
