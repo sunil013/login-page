@@ -24,9 +24,6 @@ const SignUp = () => {
     <div className="sign-page">
       <div className="signup-container">
         <img
-          //   src="https://res.cloudinary.com/sunil013/image/upload/v1669979267/7070629_3293465_wianis.jpg"
-          //   src="https://nilgiricollege.ac.in/app/app-files/images/userlog.png"
-          //   src="https://www.getillustrations.com/packs/plastic-illustrations-scene-builder-pack/scenes/_1x/accounts%20_%20man,%20workspace,%20desk,%20laptop,%20login,%20user_md.png"
           src="https://applian.com/img/login.svg"
           alt="password"
           className="password-image"
