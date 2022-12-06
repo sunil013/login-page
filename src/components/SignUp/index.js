@@ -46,30 +46,30 @@ const SignUp = () => {
               or use your email for registration
             </p>
             <div className="signup-input-box">
-              <CgProfile className="icons" />
+              <CgProfile className="signup-icons" />
               <input
                 type="text"
-                className="user-input"
+                className="signup-user-input"
                 value={name}
                 onChange={onChangeName}
                 placeholder="Name"
               />
             </div>
             <div className="signup-input-box">
-              <HiMail className="icons" />
+              <HiMail className="signup-icons" />
               <input
                 type="email"
-                className="user-input"
+                className="signup-user-input"
                 value={mail}
                 onChange={onChangeMail}
                 placeholder="example@gmail.com"
               />
             </div>
             <div className="signup-input-box">
-              <MdVpnKey className="icons" />
+              <MdVpnKey className="signup-icons" />
               <input
                 type={showPass ? 'text' : 'password'}
-                className="user-input"
+                className="signup-user-input"
                 value={password}
                 onChange={onChangePassword}
                 placeholder="Password"
@@ -77,7 +77,7 @@ const SignUp = () => {
               <button
                 type="button"
                 onClick={onChangeShow}
-                className="show-button"
+                className="signup-show-button"
               >
                 {showPass ? 'Hide' : 'Show'}
               </button>
