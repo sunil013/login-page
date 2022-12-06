@@ -4,18 +4,18 @@
 .sign-page {
   background-image: linear-gradient(
     to right bottom,
-    #000b0d,
-    #0a191c,
-    #0c2429,
-    #0c3037,
-    #093d46,
-    #0b4d58,
-    #0e5e6a,
-    #10707c,
-    #1d8a96,
-    #2ba5af,
-    #39c1c9,
-    #48dde3
+    #010e11,
+    #010e11,
+    #010e11,
+    #010e11,
+    #010e11,
+    #0c1f23,
+    #0f3035,
+    #104247,
+    #116d6e,
+    #1e9b92,
+    #3ccbb1,
+    #67fccb
   );
   min-height: 100vh;
   display: flex;
@@ -23,28 +23,32 @@
   align-items: center;
   justify-content: center;
 }
-.form-section {
+.form {
   background: rgba(133, 216, 216, 0.22);
-  /* background: rgba(255, 255, 255, 0.25); */
   border-radius: 12px;
   padding: 25px 50px 30px 50px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(30);
   width: 80%;
   max-width: 360px;
 }
 .sign-in-heading {
   font-family: 'Poppins';
   font-size: 39px;
-  font-weight: 500;
+  font-weight: 700;
   color: #ffffff;
   margin-bottom: 10px;
+  background: linear-gradient(180.51deg, #01b5ff, #00c957);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
 }
 .login-message {
   font-family: 'Poppins';
   font-size: 18px;
   font-weight: 500;
-  color: #e4d8d8a4;
   margin-bottom: 20px;
+  color: hsla(0, 0%, 100%, 0.70196);
+  text-align: center;
 }
 .icons {
   height: 30px;
@@ -54,11 +58,20 @@
 .input-box {
   display: flex;
   align-items: center;
-  border: #e4d8d8a4 solid 1px;
+  border: 1px solid #00dfc4;
   border-radius: 6px;
   padding-left: 8px;
   margin-bottom: 20px;
+  margin-top: 8px;
 }
+/* input:focus {
+  border: solid 2px;
+  outline: none !important;
+  border-image-source: linear-gradient(240.51deg, #01b5ff, #00c957);
+  border-image-slice: 1;
+  background-color: transparent;
+  border-radius: 6px;
+} */
 .user-input {
   border: none;
   background-color: transparent;
@@ -79,7 +92,7 @@
 }
 .label-text {
   font-family: 'Poppins';
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #f8f8f8;
   margin-left: 6px;
@@ -91,8 +104,16 @@
   align-items: center;
 }
 .sign-in-button {
-  /* background-color: #026ff0; */
-  background-image: linear-gradient(to right, #2ba5af, #39c1c9);
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   color: #ffffff;
   font-size: 15px;
   font-weight: 600;
@@ -103,21 +124,29 @@
   height: 35px;
   margin-top: 20px;
   cursor: pointer;
-  background-size: 100% 100%;
-  background-position: right bottom;
-  transition: all 0.5s ease-out;
+  border: none;
+  background-size: 300% 100%;
 }
 .sign-in-button:hover {
-  background-image: linear-gradient(to right, #00c578, #01b7ed);
-  background-position: left bottom;
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
 }
 .sign-up-msg {
   font-family: 'Poppins';
   font-size: 15px;
   font-weight: 500;
   color: #f8f8f8;
-  margin-top: 9px;
-  margin-bottom: 8px;
+  text-align: center;
+  margin-top: 25px;
 }
 .sign-forgot {
   font-family: 'Poppins';
@@ -127,22 +156,107 @@
 }
 .sign-forgot:hover {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: #1bfd9c;
 }
 .link {
   text-decoration: none;
 }
 .show-button {
   background-color: transparent;
+  width: 80px;
   border: none;
   font-family: 'Poppins';
   font-weight: 700;
   font-size: 14px;
+  outline: none;
   cursor: pointer;
   color: #f8f8f8;
 }
+.sign-forgot-link {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 600;
+  color: #00008b;
+}
+.sign-forgot-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: #ff7267;
+}
+.checkbox-password-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.icons-container {
+  height: 36px;
+  text-decoration: none;
+  width: 36px;
+  border-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.twitter-icon {
+  background-color: #1da1f2;
+  color: #ffffff;
+  cursor: pointer;
+}
+.twitter-icon:hover {
+  box-shadow: 0px 0px 15px 2px #1da1f2;
+  transform: scale(1.07);
+}
+.mail-icon {
+  background-color: #f2f2f2;
+  color: #f14336;
+  cursor: pointer;
+}
+.mail-icon:hover {
+  box-shadow: 0px 0px 20px 2px #6632a8;
+  transform: scale(1.07);
+}
+.fb-icon {
+  background-color: #0077b7;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+.fb-icon:hover {
+  box-shadow: 0px 0px 15px 2px #0077b7;
+  transform: scale(1.07);
+}
+.login-social-text {
+  font-family: 'Poppins';
+  color: hsla(0, 0%, 100%, 0.70196);
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
 
 @media screen and (max-width: 700px) {
-  .form-section {
+  .form {
     padding: 15px 20px 25px 20px;
+  }
+  .label-text {
+    font-size: 16px;
+  }
+  .sign-in-heading {
+    font-size: 34px;
+  }
+  .login-message {
+    font-size: 16px;
+  }
+  .user-input {
+    font-size: 16px;
   }
 }
